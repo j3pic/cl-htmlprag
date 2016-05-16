@@ -1386,7 +1386,6 @@
 ;;; @end lisp
 
 (define (%write-shtml-as-html/fixed shtml out foreign-filter)
-    (cl:declare (cl:optimize (cl:speed 0) (cl:debug 3)))
   (letrec
       ((write-shtml-text
         (lambda (str out)
@@ -1416,7 +1415,6 @@
                          (loop (+ 1 i))))))))
        (do-thing
 	   (lambda (thing)
-	     (cl:declare (cl:optimize (cl:speed 0) (cl:debug 3)))
 	     (cond ((string? thing) (write-shtml-text thing out))
 		   ((list? thing)   (if (not (null? thing))
 					(do-list-thing thing)))
