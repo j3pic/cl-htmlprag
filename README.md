@@ -16,4 +16,8 @@ The second function is `shtml->html`, which reverses the parse and creates a str
 For the full documentation, see the documentation for the [Racket version](https://planet.racket-lang.org/package-source/neil/htmlprag.plt/1/7/planet-docs/htmlprag/index.html).
 
 This version of HTMLPrag was ported from the original Scheme version of HTMLPrag, from before it was adapted
-to be compatible with Racket's immutable lists.
+to be compatible with Racket's immutable lists. Most of the code is still written in Scheme, with a compatibility
+library to recreate those parts of Scheme that HTMLPrag needs.
+
+In this source tree you will also find a port of Neil Van Dyke's Testeez testing library, which was used to
+test the original HTMLPrag and to validate this port.
