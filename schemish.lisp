@@ -239,8 +239,8 @@ Scheme that were actually used by HTMLPrag.")
 
   (define (equal? a b)
       (cl:typecase a
+	(cl:null (null? b))
 	(cl:symbol
-	 (cl:null (null? b))
 	 (equal? (symbol->string a)
 		 (symbol->string b)))
 	(cl:string (and (string? b)
