@@ -48,11 +48,12 @@
 ;; will emit case-preserved tag names just as it does in Scheme.
 
 
-(cl:defpackage :htmlprag
+(cl:defpackage :cl-htmlprag
   (:use :schemish :%testeez)
+  (:nicknames :htmlprag)
   (:export :html->shtml :shtml->html))
 
-(cl:in-package :htmlprag)
+(cl:in-package :cl-htmlprag)
 
 (cl:eval-when (:compile-toplevel :load-toplevel :execute)
   (schemish-read-macros:enable-scheme-read-syntax))
