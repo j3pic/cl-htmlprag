@@ -3,7 +3,7 @@
   :maintainer "Jeremy Phelps"
   :description "A port of Neil Van Dyke's famous HTMLPrag library to Common Lisp."
   :version "0.24"
-  :license "GPL"
+  :license "LGPL 2.1"
   :depends-on (:optima :parse-number :alexandria)
   :components
   ((:file "read-macros")
